@@ -29,7 +29,7 @@ def chinese(text):
     w,j,s,data,col,row='',0,[],{},[],[]
     for i in q:#用‘.’切割以后.fu-k0DY{background:-280.0px -37.0px;}会变成三段，用J来计数，w来拼接
         w = w + i
-        if j == 3:
+        if j == 3: 
             if 'fu-' in w :
                 data[re.findall(r'px -(.*?)px', w)[0]+'/'+re.findall(r'background:-(.*?)px', w)[0]] = w.split('{')[0]
                 col.append(re.findall(r'background:-(.*?)px', w)[0])
